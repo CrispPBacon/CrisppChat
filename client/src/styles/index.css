@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+      135deg,
+      hsl(230deg 16% 15%) 0%,
+      hsl(230deg 16% 15%) 8%,
+      hsl(230deg 16% 15%) 17%,
+      hsl(230deg 16% 15%) 25%,
+      hsl(230deg 16% 15%) 33%,
+      hsl(230deg 16% 15%) 42%,
+      hsl(230deg 16% 15%) 50%,
+      hsl(231deg 24% 17%) 58%,
+      hsl(233deg 31% 18%) 67%,
+      hsl(235deg 35% 20%) 75%,
+      hsl(235deg 36% 20%) 83%,
+      hsl(235deg 36% 20%) 92%,
+      hsl(235deg 36% 20%) 100%
+    )
+    no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: hsl(230deg 16% 15%);
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 2px solid #202020;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #454545;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #757575;
+}
+
+img {
+  width: 2rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.popup-image {
+  width: 60vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9999;
+}
+
+.popup-image::before {
+  position: absolute;
+  content: "";
+  background-color: #000000c2;
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup-image img {
+  width: 90%;
+  height: 90%;
+  z-index: 99;
+  background-color: black;
+  padding: 1rem;
+}
+
+.popup-image ion-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.popup-image button {
+  z-index: 999;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  background-color: #151515;
+  border: none;
+  color: white;
+}
+
+.popup-image button:active {
+  transform: scale(0.98);
+}

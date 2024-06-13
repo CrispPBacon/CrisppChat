@@ -1,0 +1,150 @@
+.auth-card p,
+.auth-card a,
+.auth-card span {
+  font-size: 0.8rem;
+}
+.auth-card a:hover {
+  color: blue;
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.auth-card-form span p,
+.auth-card-form span a {
+  /* font-size: .7rem; */
+  font-size: clamp(0.6rem, 3vw, 0.8rem);
+}
+
+.auth-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #15151536;
+  border: 2px solid rgb(4, 4, 13, 0.1);
+  min-height: 20rem;
+  padding: 1rem 1rem;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 15rem;
+  /* max-width: 20rem; */
+}
+
+.auth-card-logo {
+  border-radius: 100%;
+  background-color: rgba(10, 3, 35, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.auth-card-header {
+  text-align: center;
+}
+.auth-card-header p {
+  margin: 0.5rem 0;
+}
+
+.auth-card-form {
+  position: relative;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form-item span {
+  /* background-color: red; */
+  margin: 0 0.1rem;
+}
+
+.form-item ion-icon {
+  color: black;
+  position: absolute;
+  font-size: 0.8rem;
+  left: 0.7rem;
+}
+
+.form-item input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  margin: 0.1rem 0;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background-color: #151515;
+  color: white;
+}
+.form-item input:focus {
+  background-color: #353535;
+}
+
+.form-item-other {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  padding: 0 0.1rem;
+}
+.form-item-other span {
+  display: flex;
+  align-items: center;
+  padding: 0 0.1rem;
+}
+.form-item-other span label {
+  margin-left: 0.2rem;
+}
+
+.auth-card-form > input {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 20px;
+  border: none;
+  letter-spacing: 0.1rem;
+  background-color: #151515;
+  color: white;
+}
+
+.auth-card-form > input:hover {
+  background-color: rgba(4, 4, 46, 0.984);
+  color: white;
+}
+
+.formError {
+  display: none;
+  width: 100%;
+  background: #151515;
+  border-radius: 10px;
+  top: -10rem;
+  padding: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.formError span {
+  color: #ffffff9d;
+}
+
+.formError span ion-icon {
+  position: absolute;
+  top: 0.56rem;
+  color: rgb(255, 85, 85);
+}
+
+.formError.active {
+  display: flex;
+}
+
+.auth-card-header h1 {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 260px) {
+  .auth-card {
+    width: clamp(2rem, 80vw, 20rem);
+  }
+}

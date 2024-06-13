@@ -1,0 +1,12 @@
+.nav span {
+  cursor: pointer;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+}
+.nav span:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav span ion-icon {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
